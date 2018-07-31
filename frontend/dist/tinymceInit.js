@@ -36,8 +36,8 @@
       menubar: false,
       resize: false,
       skin: "lightgray",
-      plugins:'advlist autolink lists link image charmap print preview anchor textcolor searchreplace visualblocks code fullscreen insertdatetime media table contextmenu paste code help',
-      toolbar: 'insert | formatselect | bold italic underline strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | table | code ',
+      plugins:'advlist autolink lists link image charmap print preview anchor textcolor searchreplace visualblocks code fullscreen insertdatetime media table contextmenu paste code help ',
+      toolbar: 'insert | formatselect | bold italic underline strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | table | code | fullscreen ',
       content_style: "div {height: 100%;}",
       setup: function ($editor) {
         $editor.on('change', function(e) {
