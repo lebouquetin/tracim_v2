@@ -6,6 +6,7 @@ import Header from './Header.jsx'
 import Login from './Login.jsx'
 import Account from './Account.jsx'
 import AdminWorkspacePage from './AdminWorkspacePage.jsx'
+import AdminUserPage from './AdminUserPage.jsx'
 import AppFullscreenManager from './AppFullscreenManager.jsx'
 import FlashMessage from '../component/FlashMessage.jsx'
 import WorkspaceContent from './WorkspaceContent.jsx'
@@ -135,6 +136,7 @@ class Tracim extends React.Component {
           } />
 
           <Route path='/admin_temp/workspace' component={AdminWorkspacePage} />
+          <Route path='/admin_temp/user' component={AdminUserPage} />
 
           <Route path={'/wip/:cp'} component={WIPcomponent} /> {/* for testing purpose only */}
 
