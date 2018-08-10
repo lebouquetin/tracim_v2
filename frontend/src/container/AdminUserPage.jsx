@@ -125,6 +125,7 @@ class AdminUserPage extends React.Component {
               <table className='table'>
                 <thead>
                   <tr>
+                    <th scope='col'>Active</th>
                     <th scope='col'>Member</th>
                     <th scope='col'>Email</th>
                     <th scope='col'>Member can create workspace</th>
@@ -133,8 +134,11 @@ class AdminUserPage extends React.Component {
                 </thead>
                 <tbody>
                   <tr>
+                    <td>
+                      <BtnSwitch />
+                    </td>
                     <th scope='row'>Joe Delavaiga</th>
-                    <td>joedelavaiga@mail.com</td>
+                    <td><a href='#'>joedelavaiga@mail.com</a></td>
                     <td>
                       <BtnSwitch />
                     </td>
@@ -143,8 +147,11 @@ class AdminUserPage extends React.Component {
                     </td>
                   </tr>
                   <tr>
+                    <td>
+                      <BtnSwitch />
+                    </td>
                     <th scope='row'>Susie Washington</th>
-                    <td>susiewash@mail.com</td>
+                    <td><a href='#'>susiewash@mail.com</a></td>
                     <td>
                       <BtnSwitch />
                     </td>
@@ -153,8 +160,11 @@ class AdminUserPage extends React.Component {
                     </td>
                   </tr>
                   <tr>
+                    <td>
+                      <BtnSwitch />
+                    </td>
                     <th scope='row'>Marty MacJoe</th>
-                    <td>martymac@mail.com</td>
+                    <td><a href='#'>martymac@mail.com</a></td>
                     <td>
                       <BtnSwitch />
                     </td>
@@ -163,8 +173,11 @@ class AdminUserPage extends React.Component {
                     </td>
                   </tr>
                   <tr>
+                    <td>
+                      <BtnSwitch />
+                    </td>
                     <th scope='row'>Joe Delavaiga</th>
-                    <td>joedelavaiga@mail.com</td>
+                    <td><a href='#'>joedelavaiga@mail.com</a></td>
                     <td>
                       <BtnSwitch />
                     </td>
@@ -173,8 +186,11 @@ class AdminUserPage extends React.Component {
                     </td>
                   </tr>
                   <tr>
+                    <td>
+                      <BtnSwitch />
+                    </td>
                     <th scope='row'>Susie Washington</th>
-                    <td>susiewash@mail.com</td>
+                    <td><a href='#'>susiewash@mail.com</a></td>
                     <td>
                       <BtnSwitch />
                     </td>
@@ -183,8 +199,11 @@ class AdminUserPage extends React.Component {
                     </td>
                   </tr>
                   <tr>
+                    <td>
+                      <BtnSwitch />
+                    </td>
                     <th scope='row'>Marty MacJoe</th>
-                    <td>martymac@mail.com</td>
+                    <td><a href='#'>martymac@mail.com</a></td>
                     <td>
                       <BtnSwitch />
                     </td>
