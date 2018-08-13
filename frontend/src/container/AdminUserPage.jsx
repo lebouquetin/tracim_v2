@@ -73,7 +73,7 @@ class AdminUserPage extends React.Component {
                     </div>
                     <div className='userrole__role'>
                       <div className='userrole__role__workspacemanager mt-3 d-flex align-items-center'>
-                        <input type='radio' />
+                        <input type='radio' name='adminuser' />
                         <div className='d-flex align-items-center'>
                           <div className='userrole__role__icon mx-2'>
                             <i className='fa fa-fw fa-gavel' />
@@ -82,7 +82,7 @@ class AdminUserPage extends React.Component {
                         </div>
                       </div>
                       <div className='userrole__role__contentmanager mt-3 d-flex align-items-center'>
-                        <input type='radio' />
+                        <input type='radio' name='adminuser' />
                         <div className='d-flex align-items-center'>
                           <div className='userrole__role__icon mx-2'>
                             <i className='fa fa-fw fa-graduation-cap' />
@@ -91,7 +91,7 @@ class AdminUserPage extends React.Component {
                         </div>
                       </div>
                       <div className='userrole__role__contributor mt-3 d-flex align-items-center'>
-                        <input type='radio' />
+                        <input type='radio' name='adminuser' />
                         <div className='d-flex align-items-center'>
                           <div className='userrole__role__icon mx-2'>
                             <i className='fa fa-fw fa-pencil' />
@@ -100,7 +100,7 @@ class AdminUserPage extends React.Component {
                         </div>
                       </div>
                       <div className='userrole__role__reader mt-3 d-flex align-items-center'>
-                        <input type='radio' />
+                        <input type='radio' name='adminuser' />
                         <div className='d-flex align-items-center'>
                           <div className='userrole__role__icon mx-2'>
                             <i className='fa fa-fw fa-eye' />
