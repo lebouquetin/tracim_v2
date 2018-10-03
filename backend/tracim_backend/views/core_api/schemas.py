@@ -231,8 +231,15 @@ class UserCreationSchema(marshmallow.Schema):
         return UserCreation(**data)
 
 
-# Path Schemas
+class FileSchema(marshmallow.Schema):
+    files = marshmallow.fields.Field()
 
+
+class ParentIdSchema(marshmallow.Schema):
+    parent_id = marshmallow.fields.Int()
+
+
+# Path Schemas
 class UserIdPathSchema(marshmallow.Schema):
     user_id = marshmallow.fields.Int(
         example=3,

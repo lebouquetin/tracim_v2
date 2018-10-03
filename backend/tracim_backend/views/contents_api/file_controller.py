@@ -34,8 +34,10 @@ from tracim_backend.views.core_api.schemas import FileContentModifySchema
 from tracim_backend.views.core_api.schemas import FileContentSchema
 from tracim_backend.views.core_api.schemas import FileQuerySchema
 from tracim_backend.views.core_api.schemas import FileRevisionSchema
+from tracim_backend.views.core_api.schemas import FileSchema
 from tracim_backend.views.core_api.schemas import NoContentSchema
 from tracim_backend.views.core_api.schemas import PageQuerySchema
+from tracim_backend.views.core_api.schemas import ParentIdSchema
 from tracim_backend.views.core_api.schemas import \
     RevisionPreviewSizedPathSchema
 from tracim_backend.views.core_api.schemas import SetContentStatusSchema
@@ -63,6 +65,8 @@ class FileController(Controller):
     @hapic.with_api_doc(tags=[SWAGGER_TAG__FILE_ENDPOINTS])
     @require_workspace_role(UserRoleInWorkspace.CONTRIBUTOR)
     @hapic.input_path(WorkspaceIdPathSchema())
+    @hapic.input_files(FileSchema())
+    @hapic.input_forms(ParentIdSchema())
     @hapic.output_body(ContentDigestSchema())
     # TODO - G.M - 2018-07-24 - Use hapic for input file
     def create_file(self, context, request: TracimRequest, hapic_data=None):
@@ -78,8 +82,8 @@ class FileController(Controller):
             session=request.dbsession,
             config=app_config,
         )
-        file = request.POST['files']
-        parent_id = request.POST.get('parent_id') or 0  # FDV
+        file = hapic_data.files['files']
+        parent_id = hapic_data.forms.get('parent_id') or 0  # FDV
         api = ContentApi(
             current_user=request.current_user,
             session=request.dbsession,
